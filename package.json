@@ -1,10 +1,13 @@
 {
   "name": "server",
+  "homepage": "https://rishabh0303.github.io/server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.server.js"
+    "start": "nodemon index.server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
